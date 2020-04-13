@@ -5,10 +5,10 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 import { FontAwesome } from "@expo/vector-icons";
 import * as Animatable from "react-native-animatable";
 
-const Login = props => {
+const Login = (props) => {
   return (
     <View style={styles.container}>
-      <View style={[styles.imageContainer,styles.elevationLow ]}>
+      <View style={[styles.imageContainer, styles.elevationLow]}>
         <Animatable.Image
           animation="bounceIn"
           duration={1000}
@@ -29,7 +29,10 @@ const Login = props => {
         </View>
       </View>
       <View>
-        <TouchableOpacity style={styles.loginButton}>
+        <TouchableOpacity
+          style={styles.loginButton}
+          onPress={() => props.navigation.navigate("Dashboard")}
+        >
           <Text style={styles.loginButtonText}>Login</Text>
           <Animatable.Text
             animation="fadeOutRight"
@@ -60,50 +63,50 @@ const styles = StyleSheet.create({
     flex: 1,
     flexGrow: 1,
     alignItems: "center",
-    justifyContent: "flex-start"
+    justifyContent: "flex-start",
   },
   imageContainer: {
-    marginTop: 60
+    marginTop: 60,
   },
   image: {
     width: 300,
-    height: 300
+    height: 300,
   },
   welcomeTextContainer: {
-    paddingBottom: 10
+    paddingBottom: 10,
   },
   welcomeText: {
     fontSize: 32,
     fontWeight: "bold",
     alignSelf: "center",
     color: D1Colors.secondary,
-    padding: 5
+    padding: 5,
   },
   loginButton: {
     height: 40,
     width: 200,
     flexDirection: "row",
-    paddingLeft:10,
+    paddingLeft: 10,
     backgroundColor: D1Colors.secondary,
     borderRadius: 5,
     color: "#fff",
     justifyContent: "space-between",
     alignItems: "center",
-    margin: 20
+    margin: 20,
   },
   loginButtonText: {
     color: "#fff",
     fontSize: 16,
-    paddingLeft: 15
+    paddingLeft: 15,
   },
   loginArrow: {
     paddingRight: 30,
-    color: "#fff"
+    color: "#fff",
   },
   generalText: {
     color: D1Colors.secondary,
     textAlign: "center",
     padding: 4,
-    fontSize: 16
-  }
+    fontSize: 16,
+  },
 });
