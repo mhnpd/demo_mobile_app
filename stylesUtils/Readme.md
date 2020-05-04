@@ -27,6 +27,19 @@ Here are the list of text styles.
 10. bodySecondary:
 11. captions:
 
+### How to load the font while using this style utilities?
+
+```js
+//import statements
+import { Roboto } from "./stylesUtils";
+//implementation
+  await Font.loadAsync({
+          ...Ionicons.font,
+          "space-mono": require("./assets/fonts/SpaceMono-Regular.ttf"),
+          ...Roboto,
+        });
+```
+
 ### color classes presented by this system:
 1.  primary:
 2.  secondary:
