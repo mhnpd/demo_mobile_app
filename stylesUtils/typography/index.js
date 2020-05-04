@@ -1,31 +1,31 @@
 import { StyleSheet } from "react-native";
 export default StyleSheet.create({
   h1: {
-    fontFamily: "RobotoLight",
+    fontFamily: "RobotoSlabLight",
     fontWeight: "300",
     fontSize: 96,
     letterSpacing: -1.5,
   },
   h2: {
-    fontFamily: "RobotoLight",
+    fontFamily: "RobotoSlabLight",
     fontWeight: "300",
     fontSize: 60,
     letterSpacing: -0.5,
   },
   h3: {
-    fontFamily: "RobotoRegular",
+    fontFamily: "RobotoSlabRegular",
     fontWeight: "normal",
     fontSize: 60,
     letterSpacing: 0,
   },
   h4: {
-    fontFamily: "RobotoRegular",
+    fontFamily: "RobotoSlabRegular",
     fontWeight: "normal",
     fontSize: 34,
     letterSpacing: 0.25,
   },
   h5: {
-    fontFamily: "RobotoRegular",
+    fontFamily: "RobotoSlabRegular",
     fontWeight: "normal",
     fontSize: 24,
     letterSpacing: 0,

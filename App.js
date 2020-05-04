@@ -18,7 +18,7 @@ import { EvaIconsPack } from "@ui-kitten/eva-icons";
 import BottomTabNavigator from "./navigation/BottomTabNavigator";
 import useLinking from "./navigation/useLinking";
 import { Design1Stack } from "./navigation/D1Navigator";
-import { Roboto } from "./stylesUtils";
+import { Roboto, RobotoSlab } from "./stylesUtils";
 
 const Stack = createStackNavigator();
 
@@ -42,6 +42,7 @@ export default function App(props) {
           ...Ionicons.font,
           "space-mono": require("./assets/fonts/SpaceMono-Regular.ttf"),
           ...Roboto,
+          ...RobotoSlab,
         });
       } catch (e) {
         // We might want to provide this error information to an error reporting service
