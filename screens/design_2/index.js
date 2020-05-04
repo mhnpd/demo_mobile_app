@@ -1,12 +1,12 @@
 import React from "react";
 import { View, StyleSheet, Image, Text, Platform } from "react-native";
-import { Typography } from "../../stylesUtils";
+import { Typography, Colors } from "../../stylesUtils";
 
 const Design2 = (props) => {
   return (
-    <View style={{ marginTop: 50 }}>
+    <View style={{ marginTop: 50,...Colors.bgLayout }}>
       <View>
-        <Text style={Typography.h1}>hi</Text>
+        <Text style={{...Typography.h1, ...Colors.primary, ...Colors.secondary}}>hi</Text>
         <Text style={Typography.h2}>h2</Text>
         <Text style={Typography.h3}>hi</Text>
         <Text style={Typography.h4}>hi</Text>
