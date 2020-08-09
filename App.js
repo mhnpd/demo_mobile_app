@@ -18,7 +18,7 @@ import { EvaIconsPack } from "@ui-kitten/eva-icons";
 import BottomTabNavigator from "./navigation/BottomTabNavigator";
 import useLinking from "./navigation/useLinking";
 import { Design1Stack } from "./navigation/D1Navigator";
-import { Roboto, RobotoSlab } from "./stylesUtils";
+import { Fonts, Colors } from "./stylesUtils";
 
 const Stack = createStackNavigator();
 
@@ -41,8 +41,7 @@ export default function App(props) {
         await Font.loadAsync({
           ...Ionicons.font,
           "space-mono": require("./assets/fonts/SpaceMono-Regular.ttf"),
-          ...Roboto,
-          ...RobotoSlab,
+          ...Fonts,
         });
       } catch (e) {
         // We might want to provide this error information to an error reporting service
@@ -69,7 +68,7 @@ export default function App(props) {
               ref={containerRef}
               initialState={initialNavigationState}
             >
-              <Stack.Navigator headerMode="none">
+              <Stack.Navigator headerMode="none" mode="modal">
                 <Stack.Screen name="root" component={Design1Stack} />
                 <Stack.Screen name="Mohan" component={BottomTabNavigator} />
               </Stack.Navigator>

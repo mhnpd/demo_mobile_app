@@ -28,7 +28,7 @@ export default StyleSheet.create({
     fontFamily: "RobotoSlabRegular",
     fontWeight: "normal",
     fontSize: 24,
-    letterSpacing: 0,
+    letterSpacing: 0.25,
   },
   h6: {
     fontFamily: "RobotoMedium",
@@ -46,7 +46,7 @@ export default StyleSheet.create({
     fontFamily: "RobotoMedium",
     fontWeight: "500",
     fontSize: 16,
-    letterSpacing: -1.5,
+    letterSpacing: 0.15,
   },
   bodyPrimary: {
     fontFamily: "RobotoRegular",
